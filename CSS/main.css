@@ -223,6 +223,7 @@ ul li:hover {
 @media screen and (max-width: 868px) {
     .navbar_item {
         flex-direction: column;
+        gap: 20px;
     }
 }
 @media screen and (max-width: 740px) {
@@ -237,6 +238,9 @@ ul li:hover {
     }
 }
 @media screen and (max-width: 500px) {
+    .story_left {
+        text-align: center;
+    }
     .story_right {
         flex-direction: column;
         max-width: 480px;
@@ -248,7 +252,7 @@ ul li:hover {
     }
     .navbar {
         margin: 0 auto;
-        padding-bottom: 200px;
+        padding-bottom: 20px;
         background-color: #f2f2f2;
     }
     ul {
