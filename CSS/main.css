@@ -349,7 +349,7 @@ ul li:hover {
     color: #fff;
 }
 .contact_input {
-    width: 250px;
+    max-width: 250px;
     height: 40px;
     padding-left: 15px;
 }
@@ -358,7 +358,7 @@ form {
     gap: 0;
 }
 .contact_btn {
-    width: 150px;
+    max-width: 150px;
     height: 40px;
     border: none;
     background-color: #00A4E5;
@@ -488,6 +488,5 @@ form {
         max-width: 150px;
         width: 100%;
         padding: 0;
-        padding-left: 0;
     }
 }
