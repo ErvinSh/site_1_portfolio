@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 770px;
+    background-position: center;
 }
 .header_site {
     text-align: center;
@@ -196,6 +197,91 @@ ul li:hover {
 .story_item:nth-child(3) {
     background-image: url(../img/we_build.png);
 }
+
+/* Service */
+.service {
+    width: 940px;
+    margin: 0 auto;
+}
+.service .container {
+    padding: 0;
+}
+.service_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.service_h3 {
+    width: 400px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    margin-right: 125px;
+    color: #48555b;
+}
+.service_h3::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px 0;
+}
+.service_text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.02em;
+    max-width: 406px;
+    margin-right: 30px;
+    color: #48555b;
+}
+.service_btn {
+    min-width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #00A4E5;
+    cursor: pointer;
+}
+.service_bottom {
+    display: flex;
+    gap: 28px;
+}
+.service_item {
+    width: 295px;
+    height: 330px;
+    padding: 35px 23px;
+    border: 1px solid #E6E6E6;
+}
+.service_img {
+    margin-bottom: 15px;
+}
+.service_h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #48555b;
+    margin-bottom: 10px;
+}
+.service_text_2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+}
+
 @media screen and (max-width: 1440px) {
     .container  {
         padding: 0 50px;
@@ -218,6 +304,39 @@ ul li:hover {
 @media screen and (max-width: 976px) {
     ul {
         gap: 15px;
+    }
+    .service {
+        max-width: 300px;
+    }
+    .service_top {
+        flex-direction: column;
+    }
+    .service_h3 {
+        max-width: 210px;
+        margin: 0 auto 30px;
+    } 
+    .service_h3::after {
+        margin: 15px auto 0;
+    }
+    .service_text {
+        margin-right: 0;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    .service_btn {
+        max-width: 150px;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .service_bottom {
+        flex-direction: column;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .service_item {
+        /* margin: 0 auto;
+        max-width: 300px; */
     }
 }
 @media screen and (max-width: 868px) {
@@ -258,5 +377,13 @@ ul li:hover {
     ul {
         flex-direction: column;
         padding-left: 0;
+    }
+    .service {
+        margin: 0 auto;
+    }
+    .service_top {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
