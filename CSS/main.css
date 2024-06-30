@@ -79,11 +79,17 @@ h1, h2, h3, h4, h5, h6, p {
     color: #00A4E5;
     transition: all 50ms linear;
 }
-
+/* Navbar */
 .navbar {
     padding-top: 6px;
-    margin: 0 204px;
-    height: 65px;
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 12px;
+}
+.navbar .container {
+    padding: 0;
 }
 .navbar_title {
     width: 80px;
@@ -91,20 +97,22 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
 }
 .navbar_item {
+    width: inherit;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 453px;
 }
 ul {
     display: flex;
     gap: 38px;
     list-style: none;
+    padding-left: 0;
 }
 li {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.1em;
     text-align: center;
     color: #48555b;
 }
@@ -113,7 +121,6 @@ ul li:hover {
     transition: color 150ms ease;
     cursor: pointer;
 }
-
 
 /* Раздел Our Story */
 .story {
