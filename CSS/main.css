@@ -287,7 +287,6 @@ ul li:hover {
 }
 /* Touch */
 .touch {
-    max-width: 1440px;
     height: 500px;
     background-image: url(../img/big_image.png);
     background-repeat: no-repeat;
@@ -329,6 +328,48 @@ ul li:hover {
     transform: scale(1.02);
     transition: all 120ms linear;
 }
+/* Contact */
+.contact {
+    background-color: #171819;
+    height: 100px;
+}
+.contact .container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: -7px;
+}
+.contact_h3 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+.contact_input {
+    max-width: 250px;
+    height: 40px;
+    padding-left: 15px;
+}
+form {
+    display: flex;
+    gap: 0;
+}
+.contact_btn {
+    max-width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #00A4E5;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 @media screen and (max-width: 1440px) {
     .container  {
         padding: 0 50px;
@@ -397,6 +438,12 @@ ul li:hover {
     .header_h3 {
         font-size: 16px;
         padding: 0 15px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .contact .container {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 @media screen and (max-width: 500px) {
