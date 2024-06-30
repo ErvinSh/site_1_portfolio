@@ -201,7 +201,7 @@ ul li:hover {
 /* Service */
 .service {
     width: 940px;
-    margin: 0 auto;
+    margin: 0 auto 115px;
 }
 .service .container {
     padding: 0;
@@ -252,6 +252,10 @@ ul li:hover {
     background-color: #00A4E5;
     cursor: pointer;
 }
+.service_btn:hover {
+    transform: scale(1.02);
+    transition: all 150ms linear;
+}
 .service_bottom {
     display: flex;
     gap: 28px;
@@ -280,6 +284,44 @@ ul li:hover {
     line-height: 177%;
     letter-spacing: 0.01em;
     color: #48555b;
+}
+/* Touch */
+.touch {
+    max-width: 1440px;
+    height: 500px;
+    background-image: url(../img/big_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+    margin-bottom: 231px;
+    margin: 0 auto;
+}
+.touch_h2 {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #48555b;
+    margin-bottom: 30px;
+}
+.touch_btn {
+    display: block;
+    max-width: 150px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    background-color: #00A4E5;
+    text-transform: uppercase;
+    padding: 11px 23px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1440px) {
@@ -333,10 +375,6 @@ ul li:hover {
         max-width: 300px;
         width: 100%;
         margin: 0 auto;
-    } 
-    .service_item {
-        /* margin: 0 auto;
-        max-width: 300px; */
     }
 }
 @media screen and (max-width: 868px) {
@@ -357,6 +395,9 @@ ul li:hover {
     }
 }
 @media screen and (max-width: 500px) {
+    .header_h1 {
+        margin-bottom: 20px;
+    }
     .story_left {
         text-align: center;
     }
