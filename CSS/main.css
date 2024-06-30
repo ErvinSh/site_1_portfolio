@@ -321,7 +321,7 @@ ul li:hover {
     .service_text {
         margin-right: 0;
         margin: 0 auto 20px;
-        text-align: center;
+        text-align: center; 
     }
     .service_btn {
         max-width: 150px;
