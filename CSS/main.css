@@ -311,6 +311,7 @@ ul li:hover {
 }
 .touch_btn {
     display: block;
+    border: none;
     max-width: 150px;
     height: 40px;
     font-weight: 700;
@@ -322,8 +323,12 @@ ul li:hover {
     text-transform: uppercase;
     padding: 11px 23px;
     margin: 0 auto;
+    cursor: pointer;
 }
-
+.touch_btn {
+    transform: scale(1.02);
+    transition: all 120ms linear;
+}
 @media screen and (max-width: 1440px) {
     .container  {
         padding: 0 50px;
