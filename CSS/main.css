@@ -667,9 +667,12 @@ form {
         padding-bottom: 20px;
         background-color: #f2f2f2;
     }
-    ul {
+    .navbar ul {
         flex-direction: column;
         padding-left: 0;
+    }
+    .navbar ul li {
+        text-align: center;
     }
     .service {
         margin: 0 auto;
