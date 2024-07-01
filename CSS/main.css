@@ -68,7 +68,7 @@ a {
     margin-bottom: 71px;
     text-align: center;
 }
-.header_btn {
+.header_a {
     background-color: transparent;
     border: 0;
     text-transform: uppercase;
@@ -77,12 +77,9 @@ a {
     font-size: 11px;
     color: #fff;
     cursor: pointer;
-
 }
-.header_btn:hover {
-    transform: scale(1.05);
+.header_a:hover {
     color: #00A4E5;
-    transition: all 50ms linear;
 }
 /* Navbar */
 .navbar {
